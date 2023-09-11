@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Validate by direct input</legend>
+        <label for="cod">Enter the Markup validate:</label><br>
+        <textarea name="codigo" id="cod" cols="50" rows="10">
+            Agregue su código....
+        </textarea><br>
+        <input type="radio" name="validador" value="documento" id="vali" checked>
+        <label for="vali">Validate full document</label><br>
+        
+        <select name="doctype" id="use">
+            <option value="auto">(detected automatically)</option>
+            <option value="auto">HTML:5</option>
+            <option value="auto">Xhtml</option>
+        </select><br>
+
+        <input type="radio" name="validador" value="html" id="validar" checked>
+        <label for="validar">Validate HTML fragment</label><br>
+
+        <label>Use Doctype</label><br>
+        <input type="radio" name="HTML" value="HTML" id="HTML" checked>
+        <label for="HTML">HTML 4.01</label><br>
+        <input type="radio" name="HTML" value="XHTML" id="XHTML" checked>
+        <label for="XHTML">XHTML 1.0</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Options</legend>
+        <input type="radio" name="tipo" value="mensaje" id="mensaje" checked>
+        <label for="mensaje">List menssages Sequentially</label><br>
+        <input type="radio" name="tipo" value="group" id="group" checked>
+        <label for="group">Group Error Messages by Type</label><br>
+
+        <input type="checkbox" name="show" value="source" id="show">
+        <label for="show">Show Source</label><br>
+        <input type="checkbox" name="crean" value="clean" id="clean">
+        <label for="clean">Clean up Markup with HTML-Tidy</label><br>
+    </fieldset><br>
+    <input type="submit" name="enviar" value="Check" id="guardar">
+</body>
+</html>
